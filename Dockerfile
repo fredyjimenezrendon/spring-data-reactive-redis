@@ -1,2 +1,4 @@
 FROM openjdk:11
-ARG JAR_FILE=target
+EXPOSE 8080
+ADD /target/spring-data-reactive-redis-0.0.1-SNAPSHOT.jar spring-data-reactive-redis.jar
+ENTRYPOINT ["java", "-jar", "spring-data-reactive-redis.jar"]
