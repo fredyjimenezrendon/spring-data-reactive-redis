@@ -9,8 +9,8 @@ services:
     image: 'bitnami/redis:latest'
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
-#    networks:
-#      - app-tier
+    networks:
+      - app-tier
     ports:
       - '6379:6379'
 
@@ -18,5 +18,5 @@ services:
     image: 'fredyjimenezrendon/spring-data-reactive-redis'
     ports:
       - '8080:8080'
-#    networks:
-#      - app-tie
+    networks:
+      - app-tier
