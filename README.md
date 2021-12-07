@@ -2,13 +2,15 @@
 Accessing Data Reactively with Redis
 
 
-#Heroku /n
+#Heroku
+
 $heroku container:login
 $heroku create
 $heroku container:push web
 $heroku container:release web
 $heroku open
 
-#Docker /n
+#Docker
+
 docker build . -t fredyjimenezrendon/spring-data-reactive-redis
 docker push fredyjimenezrendon/spring-data-reactive-redis
